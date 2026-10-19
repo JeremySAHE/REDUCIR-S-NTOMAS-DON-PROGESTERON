@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Encuentra tu plan · Jeremy SH | Don Progesteron</title>
+<meta name="description" content="Responde unas preguntas, conoce los productos disponibles en tu país y mira los resultados de otras clientas.">
+<style>
+:root{--ink:#1d1b26;--mut:#6b6f7b;--gold:#e3b04b;--goldd:#a87420;--line:#ece6da;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:border-box}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:560px;margin:0 auto;padding:22px 18px 110px}
+.k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--goldd);font-weight:600}
+h1{font:italic 700 32px/1.1 Georgia,"Times New Roman",serif;margin:8px 0 6px}
+h2{font:italic 700 25px/1.2 Georgia,serif;margin:0 0 6px}
+p{margin:8px 0}.m{color:var(--mut);font-size:15px}
+a.lk{color:var(--goldd);font-weight:600}
+.bar{height:6px;background:var(--line);border-radius:9px;margin:16px 0 22px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#f6d27c,#d9a441);transition:width .3s}
+.q{background:linear-gradient(135deg,#2b2c34,#16161b);color:#fff;border-radius:22px;padding:22px}
+.q label{display:block;font:600 19px/1.3 system-ui;margin-bottom:12px}
+input,select,textarea{width:100%;font:inherit;font-size:17px;padding:14px;border-radius:14px;border:2px solid #4a4b57;background:#fff;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+.opt{display:flex;gap:10px;margin:6px 0 12px}.opt button{flex:1}
+.b{display:block;width:100%;text-align:center;text-decoration:none;font:700 17px system-ui;color:#2a1a00;background:linear-gradient(#f6d27c,#d9a441);border:0;border-radius:999px;padding:15px 18px;margin-top:14px;cursor:pointer}
+.b.g{background:#2bae66;color:#fff}.b.o{background:transparent;color:var(--ink);border:2px solid var(--gold)}
+.b.sel{outline:3px solid #fff;box-shadow:0 0 0 3px var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}.chip{font:600 15px system-ui;padding:11px 15px;border-radius:999px;border:2px solid #4a4b57;background:#fff;color:var(--ink);cursor:pointer}
+.chip.on{background:linear-gradient(#f6d27c,#d9a441);border-color:#d9a441}
+.err{color:#ffb4a8;font-size:15px;margin-top:8px;min-height:20px}
+.note{background:#fff4d6;border:1px solid #f0d28a;border-radius:14px;padding:12px 14px;font-size:15px;margin:14px 0}
+.msg{background:#fff;border:2px solid var(--gold);border-radius:22px;padding:22px}
+.inf{background:#faf6ee;border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin:0 0 16px;font-size:15px;color:var(--ink)}
+.inf details{margin-top:8px}.inf summary{font-weight:700;cursor:pointer}.inf li{margin:4px 0}
+.pl{background:linear-gradient(135deg,#2b2c34,#16161b);color:#fff;border-radius:22px;padding:20px;margin:16px 0}
+.pl.hot{background:linear-gradient(135deg,#f6d27c,#d9a441);color:#2a1a00;border:3px solid #8a5a00}
+.pl.rec{box-shadow:0 0 0 4px var(--gold),0 12px 30px rgba(0,0,0,.18)}
+.tag{display:inline-block;font:700 12px system-ui;letter-spacing:.08em;padding:4px 12px;border-radius:999px;background:var(--gold);color:#2a1a00;margin:0 6px 6px 0}
+.pl.hot .tag{background:#2a1a00;color:#f6d27c}
+.pl h3{font:italic 700 28px/1.1 Georgia,serif;margin:2px 0 4px}
+.sv{display:inline-block;font:700 15px system-ui;background:#2bae66;color:#fff;border-radius:999px;padding:5px 14px;margin:8px 0}
+.pl.hot .sv{background:#2a1a00}
+.pr{display:flex;gap:10px;align-items:center;padding:10px 0;border-top:1px solid rgba(255,255,255,.18)}
+.pl.hot .pr{border-color:rgba(42,26,0,.25)}
+.pr b{font-size:18px}.pr small{display:block;font-size:14px;opacity:.9;line-height:1.35}.pr a{color:inherit;font-size:13px;opacity:.9}
+.dot{flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#2a1a00;display:grid;place-items:center;font-weight:800}
+.pl.hot .dot{background:#2a1a00;color:#f6d27c}
+.ar{font-size:15px;margin:10px 0}.ar span{display:inline-block;margin:3px 6px 3px 0;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.14)}
+.pl.hot .ar span{background:rgba(42,26,0,.12)}.ar span.on{background:var(--gold);color:#2a1a00;font-weight:700}.pl.hot .ar span.on{background:#2a1a00;color:#f6d27c}
+.pc{display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#2b2c34,#16161b);color:#fff;border-radius:18px;padding:14px;margin:10px 0;border:3px solid transparent}
+.pc.on{border-color:var(--gold)}
+.pc .ck{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid #8b8d99;display:grid;place-items:center;font-weight:800;color:#2a1a00}
+.pc.on .ck{background:var(--gold);border-color:var(--gold)}
+.pc b{font-size:17px}.pc small{display:block;font-size:14px;opacity:.88}.pc .pri{margin-left:auto;text-align:right;font-weight:800;white-space:nowrap}.pc a{color:#f6d27c;font-size:13px}
+.rs{background:#faf6ee;border:1px solid var(--line);border-radius:18px;padding:16px 18px;margin:12px 0}
+.rs q{display:block;font:italic 18px/1.45 Georgia,serif;quotes:"“" "”"}
+.rs small{display:block;color:var(--mut);margin-top:8px;font-size:13px}
+.rs i{font-style:normal;display:inline-block;margin:6px 6px 0 0;font:600 12px system-ui;background:#f6d27c;color:#2a1a00;border-radius:999px;padding:3px 10px}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.fl .chip{border-color:var(--line);font-size:14px;padding:9px 13px}.fl .chip.on{border-color:#d9a441}
+.fix{position:fixed;left:0;right:0;bottom:0;padding:10px 18px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(rgba(255,255,255,0),#fff 45%)}
+.fix a{max-width:524px;margin:0 auto}
+.ft{font-size:13px;color:var(--mut);margin-top:26px}
+.mo{position:fixed;inset:0;background:rgba(10,10,16,.62);display:none;align-items:center;justify-content:center;padding:18px;z-index:50}
+.mo.on{display:flex}
+.cd{background:#fff;border-radius:24px;max-width:480px;width:100%;padding:26px 22px 20px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.35);border-top:6px solid var(--gold);touch-action:pan-y}
+.cd q{display:block;font:italic 21px/1.5 Georgia,serif;margin:22px 0 10px;quotes:"“" "”"}
+.cd .tg i{font-style:normal;display:inline-block;margin:4px 6px 0 0;font:600 12px system-ui;background:#f6d27c;color:#2a1a00;border-radius:999px;padding:3px 10px}
+.cd small{display:block;color:var(--mut);margin-top:10px;font-size:14px}
+.xb{position:absolute;top:10px;right:10px;display:flex;gap:6px}
+.xb button,.nv button{width:42px;height:42px;border-radius:50%;border:0;background:#f3eee3;color:var(--ink);font:700 20px system-ui;cursor:pointer}
+.nv{display:flex;justify-content:space-between;align-items:center;margin-top:16px}.nv span{font-size:14px;color:var(--mut)}
+.nv button{background:linear-gradient(#f6d27c,#d9a441);color:#2a1a00}
+.mi{position:fixed;left:18px;right:18px;bottom:78px;max-width:524px;margin:0 auto;z-index:49;display:none;align-items:center;gap:10px;background:#16161b;color:#fff;border-radius:999px;padding:8px 8px 8px 18px;font-size:15px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.mi.on{display:flex}.mi span{flex:1;cursor:pointer}.mi button{border:0;border-radius:999px;padding:9px 14px;font:700 14px system-ui;cursor:pointer;background:var(--gold);color:#2a1a00}.mi button.c{background:#3a3b46;color:#fff}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="k">Plan 90D de Mejora</div>
+<h1>Encuentra el plan que encaja contigo</h1>
+<p class="m">Soy Jeremy SH | Don Progesteron. Contesta unas preguntas rápidas y te muestro tu mejor opción. <a class="lk" href="#res" onclick="openR(0);return false">Ver resultados de clientas</a></p>
+<div class="bar"><i id="pg"></i></div>
+<div id="app"></div>
+<div id="res" style="margin-top:34px">
+<h2>Resultados de clientas</h2>
+<p class="m">Toca un tema para ver lo que han compartido.</p>
+<div class="fl" id="fl"></div>
+<div id="rl"></div>
+<p class="ft" style="margin-top:8px">Mensajes reales de clientas del programa, con nombres omitidos y ortografía corregida. Son experiencias personales: los resultados varían y no sustituyen la atención médica.</p>
+</div>
+<p class="ft">Los suplementos alimenticios no son medicamentos y no diagnostican, tratan, curan ni previenen enfermedades. Consulta a tu médico antes de iniciar si estás embarazada, lactando, tomas medicamentos o tienes alguna condición.</p>
+</div>
+<div class="mo" id="mo"><div class="cd" id="cd"><div class="xb"><button onclick="mn()" aria-label="Minimizar" title="Minimizar">–</button><button onclick="cl()" aria-label="Cerrar" title="Cerrar">×</button></div><q id="mq"></q><div class="tg" id="mt"></div><small id="ms"></small><div class="nv"><button onclick="mv(-1)" aria-label="Anterior">‹</button><span id="mc"></span><button onclick="mv(1)" aria-label="Siguiente">›</button></div><small style="text-align:center;margin-top:12px">Desliza a la izquierda o a la derecha para ver más</small></div></div>
+<div class="mi" id="mi"><span onclick="op(RI)" id="mit"></span><button onclick="op(RI)">Abrir</button><button class="c" onclick="cl()">×</button></div>
+<div class="fix"><a class="b o" id="qa" style="background:#fff" href="#">¿Tienes una pregunta? Escríbeme</a></div>
+<script>
+var NUM="522297322077";
+var REG={"América y el Caribe":["México","USA","Puerto Rico","Colombia","Perú","Chile"],
+"Europa":["Armenia","Austria","Bielorrusia","Bélgica","Bulgaria","Croacia","Chipre","República Checa","Dinamarca","Estonia","Finlandia","Francia","Georgia","Alemania","Grecia","Hungría","Irlanda","Italia","Letonia","Lituania","Luxemburgo","Malta","Países Bajos","Polonia","Portugal","Rumanía","Eslovaquia","Eslovenia","España","Suecia","Reino Unido","Turquía"],
+"Asia y Medio Oriente":["Emiratos Árabes Unidos","Palestina","Jordania","Israel","India","Turquía","Camboya"]};
+var AL={"usa":"USA","eeuu":"USA","ee uu":"USA","estados unidos":"USA","united states":"USA","us":"USA","uk":"Reino Unido","inglaterra":"Reino Unido","gran bretana":"Reino Unido","holanda":"Países Bajos","netherlands":"Países Bajos","emiratos":"Emiratos Árabes Unidos","uae":"Emiratos Árabes Unidos","dubai":"Emiratos Árabes Unidos","chequia":"República Checa","belarus":"Bielorrusia","mexico":"México"};
+var CID={"México":"MX","USA":"US","Puerto Rico":"US","Colombia":"CO","Perú":"PE","Chile":"CL","Turquía":"TR","Emiratos Árabes Unidos":"AE","Palestina":"PS","Jordania":"JO","Israel":"IL","India":"IN","Camboya":"KH"};
+var PR={S:"Caja con sobres",C:"Caja con cápsulas",F:"Frasco con cápsulas",P:"Frasco con polvo",G:"Frasco con gel",B:"Bolsa con sobres",M:"Bolsa con gomitas",FG:"Frasco con gomitas"};
+var CAT={
+MX:[["Essential Woman","S","essential-woman",0],["B-X","F","b-x",0],["GO!-99","F","go-99",0],["Noni-X","S","noni-x",0],["Energy X-treme","S","energy-xtreme",0],["Essential Man","S","essential-man",0]],
+CO:[["Energy XTreme","S","energy-xtreme",89],["Essential Man","S","essential-man",89],["Essential Woman","S","essential-woman",89],["Noni-X","S","noni-x",94]],
+PE:[["Energy XTreme","S","energy-xtreme",89],["Essential Man","S","essential-m",89],["Essential Woman","S","essential-w",89]],
+CL:[["Essential Man","S","essential-m",105],["Essential Woman","S","essential-w",105]],
+EU:[["Energy XTreme","S","energy-xtreme",89],["Essential Man","S","essential-man",89],["Essential Woman","S","essential-woman",89],["B-X","F","b-x",64],["PRPL CAPS X","C","",89],["B-yng","P","b-yng",89],["Gday","F","gday",89],["Gnigth","F","",89],["Gday & Gnigth","F","",89],["Fusion X Chocolate","S","fusionx-vegan-chocolate",89],["Fusion X Vanilla","S","fusionx-vegan-vanilla",89]],
+TR:[["Energy XTreme","S","energyextreme",105],["Essential Man","S","essentialman",105],["Essential Woman","S","essentialwoman",105]],
+AE:[["Energy XTreme","S","energy-xtreme",89],["Essential Man","S","essential-man",89],["Essential Woman","S","essential-woman",89]],
+IN:[["PRPL CAPS X","C","prpl-capx",89]],
+IL:[["INDIGO","S","indigoi",89],["B-yng","S","b-yng",104],["X-Grn","S","x-grn",104]],
+JO:[["Essential Man","S","e-m",89],["Essential Woman","S","e-w",89]],
+PS:[["INDIGO","S","indigop",89]],
+KH:[["Blue Energy","S","blue-energy-blend",105],["Pink For Women","S","pink-for-women",105],["Red For Men","S","red-for-men",105],["Noni Gia","S","noni-gia",105],["Pleasūr","G","pleasur",105],["Purple Caps XTreme","F","purple-caps-xtreme",105]],
+US:[["Blue Energy","S","blue-energy-blend",90],["Pink For Women","S","pink-for-women",90],["Red For Men","S","red-for-men",90],["Noni Gia","S","noni-gia",90],["Pleasūr","G","pleasur",90],["Purple Caps XTreme","F","purple-caps-xtreme",90],["b:charged Vitamin Energy Blend","P","",0],["b:base Essential Minerals","P","bbase-essential-minerals",70],["b:clear Nootropic Blend","P","bclear-nootropic-blend",120],["b:micros Pre/Pro Biotic","F","bmicros-pre-pro-biotic",110],["b:multi Daily Multivitamin","F","bmulti-daily-multivitamin",90],["b:flex Collagen Blend","B","bflex-collagen-blend",140],["b:fire Thermogenic","F","",0],["b:fire Thermogenic Coffee Supplement","B","bfire-thermogenic-coffee-supplement",120],["P8 Energy Gummies","FG","",0],["P8 Performance Gummies","M","p8-performance-gummies-professional-focused",90],["P8 Charged Strawberry Kiwi","P","p8-charge-strawberry-kiwi",90],["P8 Charged Orange Blast","P","",0],["P8 Optimal Weight","P","p8-optimal-weight",90],["P8 Sleep & Stress","F","sleep-stress",90],["P8 Amino+","F","p8-amino",90]]};
+function cu(id,slug){var gl=(id=="US"||id=="KH"),b=gl?"https://bhipglobal.com/"+id.toLowerCase()+"/":"https://bhipproducts.com/"+id.toLowerCase()+"/es/";return slug?b+"product/"+slug+(gl?"/":""):b+"products"+(gl?"/":"")}
+var DEFP={MX:"Essential Woman",US:"Pink For Women",KH:"Pink For Women",CO:"Essential Woman",PE:"Essential Woman",CL:"Essential Woman",EU:"Essential Woman",AE:"Essential Woman",JO:"Essential Woman",TR:"Essential Woman"};
+var DESC={essentialwoman:"Vitaminas B, vitamina C, zinc, hierro, ácido fólico, isoflavonas y omega 3.",bx:"Té verde, L-carnitina, CLA, cromo y ashwagandha. Contiene cafeína.",go99:"Probióticos con espirulina, jengibre y moringa.",nonix:"Noni, açaí, vitaminas C y D y magnesio.",energyxtreme:"Guaraná, matcha, té verde y vitaminas B. Contiene cafeína.",essentialman:"Selenio, biotina, zinc y vitaminas B."};
+var PN=[["ESSENTIAL",0],["BALANCE",5],["HARMONIE",8],["ADVANCE",8],["PLENITUD",9],["ULTRAQ6",8]];
+var AREAS=["Calor y cuerpo","Piel, cabello e intimidad","Peso y metabolismo","Digestión y flora intestinal","Defensas y sistema inmune","Energía y concentración"];
+var AA=[["Perimenopausia, menopausia y postmenopausia",["DEF"]],["Salud hormonal de la mujer",["DEF"]],["Salud hormonal del hombre",["Essential Man","Red For Men"],"man"],["Salud metabólica",["B-X","P8 Optimal Weight","b:fire Thermogenic Coffee"]],["Quema de grasa y bajar de peso",["B-X","P8 Optimal Weight","b:fire Thermogenic Coffee"]],["Salud inmunológica",["Noni-X","Noni Gia"]],["Energía y rendimiento físico",["Energy XTreme","Blue Energy","P8 Performance Gummies"]],["Sueño y descanso",["P8 Sleep & Stress","Gnigth","DEF"]],["Cabello y uñas",["b:flex Collagen Blend","DEF"]],["Cuidado de la piel",["b:flex Collagen Blend","DEF"]],["Digestión y flora intestinal",["GO!-99","b:micros Pre/Pro Biotic"]],["Huesos y articulaciones",["Noni-X","b:base Essential Minerals","b:flex Collagen Blend"]],["Condición crónica o autoinmune",["DEF"],"med"],["Cruda o resaca",["GO!-99","b:micros Pre/Pro Biotic"]]];
+var PROD={EW:["Essential Woman","Vitaminas B, vitamina C, zinc, hierro, ácido fólico, isoflavonas y omega 3.","essential-woman"],BX:["B-X","Té verde, L-carnitina, CLA, cromo y ashwagandha. Contiene cafeína.","b-x"],G9:["GO!-99","Probióticos con espirulina, jengibre y moringa.","go-99"],NX:["Noni-X","Noni, açaí, vitaminas C y D y magnesio.","noni-x"],EN:["Energy X-treme","Guaraná, matcha, té verde y vitaminas B. Contiene cafeína.","energy-xtreme"]};
+var PL=[{n:1,m:"ESSENTIAL",a:2,i:["EW"]},{n:2,m:"BALANCE",a:3,pct:5,hot:1,i:["EW","BX"]},{n:3,m:"HARMONIE",a:4,pct:8,hot:1,i:["EW","BX","G9"]},{n:4,m:"ADVANCE",a:5,pct:8,i:["EW","BX","G9","NX"]},{n:5,m:"PLENITUD",a:6,pct:9,i:["EW","BX","G9","NX","EN"]},{n:6,m:"ULTRAQ6",a:6,pct:8,i:["EW","BX","G9","NX","EN"],x2:1}];
+var RS=[["Sí he sentido cambios. Al principio no creía tanto, pero ya llevo unos días y los bochornos me han bajado bastante; ya no sudo tanto en la noche como antes y eso me tenía desesperada. También duermo un poquito mejor.","c s","Primeros días"],
+["Me siento bien, principalmente he estado durmiendo bien. Y en el día igual me siento bien, muy activa; ya tenía rato de no sentirme así.","s e","A los 3 días"],
+["Creo que sí me está sirviendo: los sudores fríos los he sentido menos y la ansiedad ha bajado. He pasado mejores noches sin despertarme sudando frío. Te lo agradezco de corazón.","c a s","A los 4 días"],
+["Sí he visto cambios, sobre todo en el sueño: antes me despertaba a cada rato y ahora descanso más seguido, no perfecto pero sí mejor que antes. Los cambios de humor también han bajado un poco, ya no exploto tan fácil.","s a",""],
+["Me he sentido mejor: la ansiedad ya no me pega tan fuerte como antes y eso me sorprende mucho, porque ya estaba muy mal con eso. Tampoco me duele tanto la cabeza ni me siento tan cansada todo el día.","a e c","A los 3 días"],
+["Ya me he sentido muy bien, los sudores nocturnos ya no me dan, gracias a Dios.","c",""],
+["Ya duermo mucho mejor: me levantaba hasta 4 veces al baño porque orinaba mucho en las noches, y tengo dos noches que ya no me levanto tanto. Ojalá siga mejorando.","s",""],
+["Hoy amanecí mejor con mis dolores… ya me puedo mover un poco más.","d",""],
+["Con el noni muy bien: ya es muy raro que sufra de los bochornos. Creo que me enamoré más del noni.","c","Con Noni-X"],
+["Sí, ya noté mejoría. Esa picazón me daba mucho en las noches, y estoy mejor desde que empecé a tomar lo que me mandaste.","p",""],
+["Estoy contenta porque empiezo a ver resultados: me siento con más energía y ya duermo un poco más.","e s",""],
+["Con bochornos no sufro, pero mi insomnio ha disminuido mucho, me siento con más energía y menos cansancio, y los dolores musculares han disminuido bastante. Ya no amanezco tan adolorida, incluso mi ropa ya no me queda tan ajustada, ya no me inflamo tanto.","s e d",""]];
+var TG={c:"Bochornos y sudores",s:"Sueño",a:"Ánimo y ansiedad",e:"Energía",d:"Dolor y movilidad",p:"Piel"};
+var A={},step=0,MAP={},SEL={},FL="",RL=[],RI=0;
+for(var r in REG)REG[r].forEach(function(c){MAP[nz(c)]={n:c,r:(c=="Turquía"?"Europa y Asia":r),c:CID[c]||"EU"}});
+function nz(s){return s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[.]/g," ").replace(/\s+/g," ").trim()}
+function $(i){return document.getElementById(i)}
+function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+$("qa").href=wa("Hola Don Progesteron, tengo una pregunta.");
+function bar(){$("pg").style.width=Math.min(100,step/5*100)+"%"}
+function ageOpts(){var h='<option value="">Selecciona tu edad</option>';for(var i=18;i<=90;i++)h+='<option>'+i+'</option>';return h+'<option>Más de 90</option>'}
+function show(){bar();var x=$("app");
+if(step==0)x.innerHTML='<div class="q"><label>1. ¿Qué edad tienes?</label><select id="f">'+ageOpts()+'</select><div class="err" id="e"></div><button class="b" onclick="nx()">Continuar</button></div>';
+if(step==1)x.innerHTML='<div class="q"><label>2. ¿Qué síntomas estás teniendo o presentas ahora?</label><textarea id="f" placeholder="Escribe cuáles sientes"></textarea><div class="err" id="e"></div><button class="b" onclick="nx()">Continuar</button></div>';
+if(step==2)x.innerHTML='<div class="q"><label>3. ¿Llevas o tienes ahora algún tratamiento médico asistido o tomas medicamentos?</label><div class="opt"><button class="b" id="s1" onclick="tr(1)">Sí</button><button class="b" id="s0" onclick="tr(0)">No</button></div><div id="tw" hidden><textarea id="f" placeholder="Escribe cuáles o qué tratamiento"></textarea></div><div class="err" id="e"></div><button class="b" onclick="nx()">Continuar</button></div>';
+if(step==3)x.innerHTML='<div class="q"><label>4. ¿Desde qué país me escribes?</label><input id="f" list="pl" placeholder="Escribe tu país" autocomplete="off"><datalist id="pl">'+Object.keys(MAP).map(function(k){return '<option value="'+MAP[k].n+'">'}).join("")+'</datalist><div class="err" id="e"></div><button class="b" onclick="nx()">Continuar</button></div>';
+if(step==4)area();
+if(step==5)out();
+window.scrollTo({top:0,behavior:"smooth"})}
+function tr(v){A.tr=v;$("s1").className="b"+(v?" sel":"");$("s0").className="b"+(v?"":" sel");$("tw").hidden=!v}
+function err(t){$("e").textContent=t;return false}
+function nx(){var f=$("f"),v=f?f.value.trim():"";
+if(step==0){if(!v)return err("Selecciona tu edad.");A.age=v}
+if(step==1){if(!v)return err("Cuéntame qué sientes para ayudarte mejor.");A.sym=v}
+if(step==2){if(A.tr===undefined)return err("Elige Sí o No.");if(A.tr){if(!v)return err("Escribe cuáles o qué tratamiento.");A.trt=v}else A.trt=""}
+if(step==3){if(!v)return err("Escribe tu país.");var k=nz(v);k=AL[k]?nz(AL[k]):k;var c=MAP[k];A.pais=v;if(c){A.pais=c.n;A.reg=c.r;A.cat=c.c}else return nope()}
+step++;show()}
+function nope(){var L=Object.keys(REG).map(function(r){return "<b>"+r+":</b> "+REG[r].join(", ")}).join("<br><br>");
+$("pg").style.width="100%";
+$("app").innerHTML='<div class="msg"><h2>Hola! Un abrazo fuerte hasta allá.</h2><p>Te comento…</p><p><b>Mi programa aún no está disponible en tu nación.</b></p><p>Pero si tienes conocidos o familiares que vivan en estos países y te puedan hacer llegar este programa hasta tu nación, confírmame para enviarte información de mi programa.</p><p class="m" style="font-size:14px">'+L+'</p><p>En caso de que no tengas conocidos, no te preocupes 💗<br>Eres bienvenida a continuar conectándote a mis LIVES 🙌</p><a class="b g" href="'+wa("Hola Don Progesteron, te escribo desde "+A.pais+". Tengo un conocido o familiar en uno de los países disponibles que me puede hacer llegar el programa. Mi edad: "+A.age+".")+'">Tengo un contacto en uno de esos países</a><button class="b o" onclick="step=3;show()">Cambiar mi país</button></div>';return false}
+function info(){var n=A.cat=="MX"?"Plan 90D de Mejora + productos para 1 mes + Guía de Alimentación + Guía de Hábitos + Guía de 100 Síntomas":(CAT[A.cat].length+" producto"+(CAT[A.cat].length>1?"s":"")+" disponible"+(CAT[A.cat].length>1?"s":"")+" en tu país");
+return '<div class="inf"><b>¡Qué gusto! Mi programa sí está disponible en '+esc(A.pais)+'.</b><br>Región: '+A.reg+'. Incluye: '+n+'.<details><summary>¿Para quién es?</summary><ul><li>Personas de 18 años en adelante.</li><li>No se recomienda durante el embarazo, salvo que tu médico lo apruebe.</li><li>En niños solo con supervisión de un adulto y de su médico.</li><li>Son complementos y suplementos que aportan nutrientes, vitaminas, minerales y aminoácidos que el cuerpo requiere; no son medicina.</li><li>La combinación se elige según los ingredientes y nutrientes que mejor te convengan.</li></ul></details></div>'}
+function area(){var h=info()+'<div class="q"><label>5. ¿Qué área quieres mejorar?</label><p style="font-size:15px;opacity:.85;margin:-4px 0 12px">Elige todas las que quieras.</p><div class="chips" id="ch">';
+AA.forEach(function(a,i){h+='<button class="chip" data-i="'+i+'">'+a[0]+'</button>'});
+$("app").innerHTML=h+'</div><div class="err" id="e"></div><button class="b" onclick="go()">Ver mis opciones</button></div>';
+$("ch").onclick=function(e){var b=e.target.closest("button");if(b)b.classList.toggle("on")}}
+function kk(s){return String(s).toLowerCase().replace(/[^a-z0-9]/g,"")}
+function go(){A.ar=[].slice.call(document.querySelectorAll("#ch .chip.on")).map(function(b){return +b.dataset.i});if(!A.ar.length)return err("Elige al menos un área.");sugg();step=5;show()}
+function sugg(){var it=CAT[A.cat],S={},G={};
+A.ar.forEach(function(ai){var pf=AA[ai][1],pick=null;for(var q=0;q<pf.length&&pick===null;q++){var nm=pf[q]=="DEF"?DEFP[A.cat]:pf[q];if(!nm)continue;for(var i=0;i<it.length;i++)if(kk(it[i][0])==kk(nm)){pick=i;if(pf[q]=="DEF")G[i]=1;break}}if(pick!==null)S[pick]=1});
+if(!Object.keys(S).length&&DEFP[A.cat]){for(var i=0;i<it.length;i++)if(kk(it[i][0])==kk(DEFP[A.cat])){S[i]=1;G[i]=1}}
+A.sg=S;A.df=G;SEL={};for(var k in S)SEL[k]=true}
+function anames(){return A.ar.map(function(i){return AA[i][0].toLowerCase()}).join(", ")}
+function base(){return "Hola Don Progesteron. Edad: "+A.age+". País: "+A.pais+". Síntomas: "+A.sym+". Áreas a mejorar: "+anames()+". Tratamiento o medicamentos: "+(A.tr?"Sí ("+A.trt+")":"No")+"."}
+function notes(){var h="";if(A.tr)h+='<div class="note">Como llevas un tratamiento o tomas medicamentos, consulta a tu médico antes de iniciar cualquier suplemento. Aun así puedes conocer las opciones.</div>';
+if(A.ar.some(function(i){return AA[i][2]=="med"}))h+='<div class="note">Para condiciones médicas crónicas o autoinmunes, consulta primero a tu médico. Mis productos son complementos y no sustituyen ningún tratamiento.</div>';
+if(A.ar.some(function(i){return AA[i][2]=="man"}))h+='<div class="note">Para la salud del hombre existe <b>Essential Man</b> (opcional). Escríbeme y te oriento.</div>';return h}
+function out(){var it=CAT[A.cat],mx=A.cat=="MX";
+var h='<h2>Elige tus productos</h2><p class="m">Te sugerí lo que va con tus áreas, pero tú decides: puedes quitar, cambiar o agregar los que quieras. <b>Un solo producto, el que prefieras, es el Plan 1</b>; dos productos, el Plan 2, y así hasta el Plan 6.</p>'+notes()+'<div class="inf" id="sm"></div>';
+it.forEach(function(p,i){var d=DESC[kk(p[0])];h+='<div class="pc'+(SEL[i]?" on":"")+'" data-i="'+i+'" onclick="tg('+i+')"><div class="ck">'+(SEL[i]?"✓":"")+'</div><div><b>'+esc(p[0])+'</b>'+(A.df[i]?' <small style="display:inline;color:#f6d27c">· por defecto para mujer</small>':(A.sg[i]?' <small style="display:inline;color:#f6d27c">· sugerido para ti</small>':''))+'<small>'+(mx&&d?d+' · ':'')+PR[p[1]]+'</small><a href="'+cu(A.cat,p[2])+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">Ver ingredientes y composición</a></div>'+(mx?'':'<div class="pri">'+(p[3]?'$'+p[3]+' USD':'<small style="font-weight:400">Precio por confirmar</small>')+'</div>')+'</div>'});
+h+='<div id="tot"></div>'+(mx?'<div class="inf" style="margin-top:16px"><b>Los 6 planes de México</b><ul><li>Plan 1 · ESSENTIAL: 1 producto</li><li><b>Plan 2 · BALANCE: 2 productos · ahorras 5%</b> (más elegido)</li><li><b>Plan 3 · HARMONIE: 3 productos · ahorras 8%</b> (más elegido)</li><li>Plan 4 · ADVANCE: 4 productos · ahorras 8%</li><li>Plan 5 · PLENITUD: 5 productos · ahorras 9%</li><li>Plan 6 · ULTRAQ6: 6 productos · ahorras 8%</li></ul></div>':'')+'<button class="b o" onclick="openR(0)">Ver resultados de clientas</button><button class="b o" onclick="A={};step=0;show()">Empezar de nuevo</button>';
+$("app").innerHTML=h;tot()}
+function tg(i){SEL[i]=!SEL[i];var el=document.querySelector('.pc[data-i="'+i+'"]');el.className="pc"+(SEL[i]?" on":"");el.querySelector(".ck").textContent=SEL[i]?"✓":"";tot()}
+function tot(){var it=CAT[A.cat],mx=A.cat=="MX",s=[],sum=0,unk=0,c=0;
+it.forEach(function(p,i){if(SEL[i]){c++;s.push(p[0]);if(p[3])sum+=p[3];else if(!mx)unk++}});
+if(!c){$("sm").innerHTML="Elige al menos un producto para ver tu plan.";$("tot").innerHTML="";return}
+var n=Math.min(c,6),pl=PN[n-1],hot=(mx&&(n==2||n==3));
+$("sm").innerHTML='<b>'+c+' producto'+(c>1?'s':'')+' elegido'+(c>1?'s':'')+' → Plan '+n+' · '+pl[0]+'</b>'+(hot?' (de los más elegidos)':'')+(c>6?'<br><span class="m">Con más de 6 productos te armo tu combinación por WhatsApp.</span>':'');
+var t=base()+" Quiero el PLAN "+n+": "+pl[0]+" con estos productos: "+s.join(", ")+(mx?"":". Total aprox.: $"+sum+" USD"+(unk?" más los productos por confirmar":""))+". ¿Me ayudas a empezar?";
+var nx=n<6?PN[n]:null;
+$("tot").innerHTML='<div class="pl'+(hot?' hot':'')+' rec"><span class="tag">TU PLAN</span>'+(hot?'<span class="tag">MÁS ELEGIDO</span>':'')+'<h3>Plan '+n+' · '+pl[0]+'</h3>'+(mx?(pl[1]?'<span class="sv">Ahorras '+pl[1]+'%</span>':'<span class="sv" style="background:transparent;border:1.5px solid currentColor;color:inherit">Tu punto de partida</span>'):'<span class="sv">Total aprox. $'+sum+' USD'+(unk?' + por confirmar':'')+'</span>')+'<p style="margin:8px 0">'+s.map(esc).join(" · ")+'</p>'+(nx&&c<6?'<p class="m" style="color:inherit;opacity:.9;font-size:14px">Si sumas un producto más, pasas al Plan '+(n+1)+' · '+nx[0]+(mx&&nx[1]?' y ahorras '+nx[1]+'%':'')+'.</p>':'')+'<a class="b g" href="'+wa(t)+'">Quiero el Plan '+n+'</a></div>'}
+function rl(){RL=RS.filter(function(r){return !FL||r[1].split(" ").indexOf(FL)>=0})}
+function res(){var f=$("fl"),h='<button class="chip'+(FL?'':' on')+'" data-t="">Todos</button>';for(var k in TG)h+='<button class="chip'+(FL==k?' on':'')+'" data-t="'+k+'">'+TG[k]+'</button>';f.innerHTML=h;rl();
+$("rl").innerHTML=RL.map(function(r,i){var t=r[0].length>110?r[0].slice(0,107)+"…":r[0];return '<div class="rs" style="cursor:pointer" onclick="op('+i+')"><q>'+esc(t)+'</q>'+r[1].split(" ").map(function(x){return '<i>'+TG[x]+'</i>'}).join("")+'<small>Toca para leerlo completo</small></div>'}).join("")}
+function fill(){var r=RL[RI];if(!r)return;$("mq").textContent=r[0];$("mt").innerHTML=r[1].split(" ").map(function(x){return '<i>'+TG[x]+'</i>'}).join("");$("ms").textContent="Clienta del programa"+(r[2]?" · "+r[2]:"");$("mc").textContent=(RI+1)+" de "+RL.length;$("mit").textContent="Testimonio "+(RI+1)+" de "+RL.length}
+function op(i){rl();if(!RL.length)return;RI=((i%RL.length)+RL.length)%RL.length;fill();$("mo").className="mo on";$("mi").className="mi"}
+function openR(i){op(i)}
+function mv(d){if(!RL.length)return;RI=(RI+d+RL.length)%RL.length;fill()}
+function cl(){$("mo").className="mo";$("mi").className="mi"}
+function mn(){$("mo").className="mo";$("mi").className="mi on"}
+$("fl").onclick=function(e){var b=e.target.closest("button");if(!b)return;FL=b.dataset.t;res()};
+$("mo").onclick=function(e){if(e.target===$("mo"))cl()};
+var tx=0,ty=0;
+$("cd").addEventListener("touchstart",function(e){tx=e.changedTouches[0].clientX;ty=e.changedTouches[0].clientY},{passive:true});
+$("cd").addEventListener("touchend",function(e){var dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3)mv(dx<0?1:-1)},{passive:true});
+document.addEventListener("keydown",function(e){if($("mo").className.indexOf("on")<0)return;if(e.key=="ArrowRight")mv(1);if(e.key=="ArrowLeft")mv(-1);if(e.key=="Escape")cl()});
+show();res();
+</script>
+</body>
+</html>
